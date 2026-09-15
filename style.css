@@ -46,3 +46,12 @@
   line-height: normal;
   white-space: nowrap;
 }
+/* Original CSS is injected before this refactor patch. */
+
+.desktop {
+  min-height: max(1024px, 100dvh);
+}
+
+.desktop .pose {
+  display: block;
+}
