@@ -1,1 +1,58 @@
 
+.desktop {
+  overflow: hidden;
+  background: linear-gradient(
+    225deg,
+    rgba(254, 211, 255, 1) 0%,
+    rgba(255, 169, 169, 1) 93%
+  );
+  width: 100%;
+  min-width: 1440px;
+  min-height: 1024px;
+  position: relative;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  top: 319px;
+  left: 0;
+  font-family: "Libre Barcode 39 Text-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 430.4px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.desktop .pose {
+  position: absolute;
+  top: 80px;
+  left: 466px;
+  width: 604px;
+  height: 944px;
+  aspect-ratio: 0.54;
+  object-fit: cover;
+}
+
+.desktop .div {
+  position: absolute;
+  top: 930px;
+  left: 974px;
+  font-family: "KyivType Sans-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 54.3px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+/* Original CSS is injected before this refactor patch. */
+
+.desktop {
+  min-height: max(1024px, 100dvh);
+}
+
+.desktop .pose {
+  display: block;
+}
